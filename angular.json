@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "ui-test"
+  "defaultProject": "ui-test",
+  "cli": {
+    "analytics": false
+  }
 }

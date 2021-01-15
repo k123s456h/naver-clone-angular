@@ -1,0 +1,218 @@
+.main{
+  position: relative;
+  height: 160px;
+
+  .group-flex{
+    display: block;
+    position: relative;
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    .logo-area{
+      position: relative;
+      height: 100%;
+
+      .logo-default{
+        position: absolute;
+        top: 50%;
+        left: -9px;
+        margin-top: -32px;
+
+        .logo-naver{
+          display: inline-block;
+          width: 222px;
+          height: 52px;
+          background-position: 0 -158px;
+        }
+      }
+    }
+
+
+    .service-area{
+      position: absolute;
+      top: 12px;
+      right: 27px;
+
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+      
+      .link-set-home{
+        float: left;
+        font-size: 11px;
+        color: #404040;
+      }
+      .link-set-home::after{
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        background-position: -382px -213px;
+        background-repeat: no-repeat;
+        vertical-align: top;
+        content: '';
+        margin: -3px 0 0 3px;
+      }
+
+      .sa_bar{
+        float: left;
+        width: 1px;
+        height: 10px;
+        margin: 3px 7px;
+        background-color: #e4e8eb;
+      }
+
+      .link-junior{
+        float: left;
+        width: 60px;
+        height: 10px;
+        margin: 3px;
+        background-position: -333px -267px;
+        background-repeat: no-repeat;
+
+      }
+
+      .link-happybean{
+        float: left;
+        margin-left: 6px;
+        width: 34px;
+        height: 11px;
+        margin: 3px 3px 2px;
+        background-position: -257px -308px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .search-area{
+      position: absolute;
+      top: 50%;
+      left: 268px;
+      margin-top: -28px;
+
+      .search-form{
+        margin: 0;
+        padding: 0;
+
+        fieldset{
+          padding: 0;
+          margin: 0;
+        }
+
+        .search-green-window{
+          position: relative;
+          width: 582px;
+          height: 52px;
+          border: 2px solid #19ce60;
+          border-radius: 2px;
+        }
+
+        .search-bar{
+          width: 444px;
+          height: 24px;
+          padding: 13px 15px;
+          margin: 1px;
+
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 24px;
+        }
+        .search-bar:focus{
+          outline: 0;
+          outline-offset: -2px;
+        }
+
+        .search-button{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 56px;
+          background-color: #19ce60;
+          border-radius: 0 2px 2px 0;
+          cursor: pointer;
+        }
+        .search-button-icon{
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background-position: -180px -386px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+}
+
+.search-keyboard{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 84px;
+  width: 36px;
+  z-index: 400;
+
+  .ico-keyboard{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: top;
+    margin: -6px 0 0 -10px;
+
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-position: -420px -248px;
+    background-repeat: no-repeat;
+  }
+}
+
+.search-autocomplete{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 64px;
+  width: 22px;
+
+  .ico-arr-down{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    vertical-align: top;
+    margin: -2px 0 0 -5px;
+  
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    background-position: -404px -258px;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+.logo-naver, .link-set-home::after, .link-junior, .link-happybean, .search-button-icon, .ico-keyboard ,.ico-arr-down{
+  background-image: url('https://s.pstatic.net/static/www/img/uit/2020/sp_main_1f05c0.png');
+  background-size: 440px 410px;
+}
+
+// button, input{
+//   border: 0;
+//   border-radius: 0;
+//   --webkit-border-radius: 0;
+// }
+
+*{
+  border: 1px dotted magenta;
+  border-radius: 2px;
+
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
